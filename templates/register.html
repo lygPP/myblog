@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册页面</title>
+	<link rel="stylesheet" href="../css/allFore.css">
+	<style>
+	#result{
+		width: 300px;
+		height: 400px;
+		background-color: #666;
+	}
+	</style>
+</head>
+<body>
+	<div class="in_container">
+		<div class="reg_box">
+			<h2>注册</h2>
+			<form action="../register.php" name="regFrom" method="post" enctype="multipart/form-data">
+				<div class="first">
+					<div id="toux"></div>
+					<input id="show" type="file" name="myfile">
+				</div>
+				<div id="sec" class="sec">
+					<p><label for="name">用户名：</label><input type="text" name="username" id="name" placeholder="" required="required"><span class="msg"><i class="ati">输入6-25个字符，仅包含英文、汉字及下划线</i></span></p>
+					<p class="tips"><b id="charLen">0个字符</b></p>
+					<p><label for="passwd">密码：</label><input type="password" name="password" id="passwd" placeholder="" required="required"><span class="msg"><i class="ati">输入8-16个字符</i></span></p>
+					<p class="tips"><em class="active">弱</em><em>中</em><em>强</em></p>
+
+					<p><label for="passwd">确认密码：</label><input type="password" name="password" id="passwd" placeholder="" disabled="disabled"><span class="msg"><i class="ati">请再输入一次</i></span></p>
+					<p class="tips"></p>
+					<p><label for="jobs">工作：</label><input type="text" name="job" id="jobs" placeholder="" required="required"><span class="msg"><i class="ati">输入6-25个字符，仅包含英文、汉字及下划线</i></span></p>
+					<p class="tips"></p>
+					<textarea name="detail"></textarea>
+				</div>
+				<div class="third">
+					<input id="submit" type="submit" value="注册"><input id="reset" type="reset" value="重置">
+				</div>
+				
+			</form>
+		</div>
+	</div>
+
+
+
+	<script src="../js/match.js"></script>
+	<script src="../js/toux.js"></script>
+</body>
+</html>

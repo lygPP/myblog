@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的博客</title>
+	<link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/allFore.css">
+
+</head>
+<body>
+	<div class="container">
+		<div class="info">
+			<nav>
+				<ul>
+					<li><a href="index.php">主页</a></li>
+					<li><a href="article.php">博文</a></li>
+					<li><a href="albummanager.php">图册</a></li>
+					<li><a href="video.php">视频</a></li>
+					<li><a href="loginout.php">离开</a></li>
+				</ul>
+			</nav>
+			<div class="bg-color">
+				<div class="info-list">
+					<div>
+					<img class="toux" src="userpic/<{$smarty.session.pic}>" alt="我的头像">
+					<section>
+						<p>My name is <span> <{$smarty.session.username}> </span></p>
+						<p>My Job : <span> <{$smarty.session.job}> </span></p>
+						<p><span>Description : </span><{$smarty.session.detail}></p>
+					</section>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="right-sight">
+			<!-- 博文模块 -->
+			<div class="essay">
+				<div class="atc_nav">
+				<h2>相册目录</h2>
+<!-- 					<button>添加视频</button> -->
+				</div>
+				<{foreach from=$albums item=row}>
+				<section class="album_pic">
+					<a href="picture.php?albumid=<{$row.albumid}>">
+						<div class="album">
+							<img class="preview" src="image/bg.jpg" alt="picture">
+						</div>
+					</a>
+					<p><{$row.albumname}></p>
+				</section>
+				<{/foreach}>
+				
+				
+
+			</div>
+
+	</div>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

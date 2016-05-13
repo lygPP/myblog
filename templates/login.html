@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录页面</title>
+	<link rel="stylesheet" href="../css/allFore.css">
+	<script type="text/javascript">
+		function newgdcode(obj,url){
+			obj.src = url+'?nowtime='+new Date().getTime();
+		}
+	</script>
+</head>
+<body>
+	<div class="in_container">
+		<div class="login_box">
+			<h2>登录</h2>
+			<form action="../checkLogin.php" name="loginFrom" method="post">
+				<p><label for="name">用户名：</label><input type="text" name="username" id="name" placeholder="使用英文字母和下划线" required="required"></p>
+				<p><label for="password">密码：</label><input type="password" name="password" id="password" placeholder="密码不少于8位" required="required"></p>
+				<p><label for="password">验证码：</label><input type="text" name="validation" id="validation"  required="required"></p>
+				<p><img src="../imgcode.php" alt="看不清，换一张" style="cursor: pointer" onclick="javascript: newgdcode(this,this.src);"></p>
+				<p class="up"><input type="submit" value="登录"><input type="reset" value="重置"></p>
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的博客</title>
+	<link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/allFore.css">
+	
+</head>
+<body>
+	<div class="container">
+		<div class="info">
+			<nav>
+				<ul>
+					<li><a href="deleteuser.php?userid=<{$userid}>&pic=<{$pic}>">删除该用户</a></li>
+				</ul>
+			</nav>
+			<div class="bg-color">
+				<div class="info-list">
+					<div>
+					<img class="toux" src="userpic/<{$pic}>" alt="我的头像">
+					<section>
+						<p>My name is <span> <{$username}> </span></p>
+						<p>My Job : <span> <{$job}> </span></p>
+						<p><span>Description : </span><{$detail}></p>
+					</section>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="right-sight">
+			<!-- 博文模块 -->
+			<div class="essay">
+				<div class="atc_nav">
+				<h2>博文目录</h2>
+<!-- 					<button>添加视频</button> -->
+				</div>
+				<{foreach from=$articles item=row}>
+				<section class="item">
+					<a href="#">
+						<div class="date">
+							<span>08</span>
+							<span>2015/04</span>
+						</div>
+					</a>
+					<p><{$row.articletitle}></p>
+					<p><{$row.articlesummary}></p>
+				</section>
+				<{/foreach}>
+				
+
+				<div class="page">
+					<ul class="pagination">
+						<li class="disable"><a href="#">&laquo</a></li>
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">6</a></li>
+						<li><a href="#">&raquo</a></li>
+					</ul>
+				</div>
+			</div>
+		<!-- 博文模块结束 -->
+			<!-- 图片模块 -->
+			<div>
+				
+
+
+
+
+			</div>
+
+
+
+		</div>
+
+
+
+		<div></div>
+		<div></div>
+
+
+
+
+	</div>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

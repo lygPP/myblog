@@ -1,0 +1,90 @@
+body{
+	background-color: rgba(97, 87, 108,0.8);
+}
+.pic_container{
+	width: 1160px;
+	height: 650px;
+	margin: 16px auto;
+	font-size: 16px;
+	font-family: simHei;
+}
+.pic_nav{
+	width: 1160px;
+	height: 50px;
+	background-color: rgba(47, 17, 32,0.7);
+}
+.pic_nav h2{
+	width: 120px;
+	height: 50px;
+	float: left;
+	padding-left: 15px;
+	line-height: 50px;
+	color: #fff;
+	background-color: rgba(47, 17, 32,0.7);
+}
+.pic_nav button{
+	width: 120px;
+	height: 50px;
+	background-color: rgba(47, 17, 32,0.7);
+	float: right;
+	font-size: 16px;
+	font-family: simHei;
+	line-height: 50px;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+}
+.pic_nav button:hover{
+	font-size: 18px;
+}
+#delcmf{
+	visibility: hidden;
+}
+.pic_content{
+	width: 1144px;
+	height: 600px;
+	clear: both;
+	border: 8px solid rgba(47, 17, 32,0.7);
+	border-top: none;
+	background-image: url(../image/bg3.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 100% 105%;
+/*	overflow: hidden;*/
+}
+.pic_box{
+	width: 1140px;
+	height: 540px;
+	margin: auto;
+	overflow: scroll;
+	overflow-x:hidden;
+}
+.pic_box div{
+	width: 120px;
+	height: 120px;
+	float: left;
+	margin: 5px 0 5px 15px;
+	border: 1px solid transparent;
+	/*border: 1px solid rgb(244, 220, 85);*/
+	overflow: hidden;
+}
+.picform div input{
+	float: left;
+	visibility: hidden;
+}
+.pic_content img{
+	max-width: 93%;
+	max-height: 93%;
+	float: right;
+	border: 1px solid #fff;
+	margin: 2px;
+	overflow: hidden;
+	cursor: pointer;
+}
+div.page{
+	margin: 0;
+}
+.pagination li a{
+	color: rgb(167, 1, 91);
+	font-weight: bold;
+}

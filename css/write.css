@@ -1,0 +1,161 @@
+.container{
+	width: 100%;
+	height: 800px;
+	font-size: 16px;
+	font-family: simSun;
+}
+nav{
+	width: 100%;
+	height: 50px;
+	background-color: rgb(39, 40, 34);
+	font-size: 20px;
+	font-family: simHei;
+}
+nav ul{
+	margin-left: 50px;
+}
+nav ul li{
+	display: inline;
+	line-height: 50px;
+	margin: 0 10px;
+}
+nav ul li a{
+	color: #fff;
+	cursor: pointer;
+	border: 2px solid transparent;
+	padding: 5px;
+	transition:border 0.5s,border-radius 0.5s;
+	-webkit-transition:border 0.5s,border-radius 0.5s;
+	-moz-transition:border0.5s,border-radius 0.5s;
+	-o-transition:border0.5s,border-radius 0.5s;
+}
+nav ul li a:hover{
+	border: 2px solid rgb(249, 38, 114);
+	border-radius: 3px;
+}
+nav ul li a:visited{
+	color: #fff;
+}
+nav ul li a:focus{
+	color: #fff;
+}
+.wbox{
+	width: 100%;
+	height: 700px;
+	margin-top: 50px;
+	border: 1px solid red;
+}
+.lefts{
+	width: 20%;
+	height: 700px;
+	float: left;
+	margin: 0 5%;
+	background-color: rgb(234, 234, 234);
+	text-align: center;
+	border: 1px solid blue;
+}
+.rights{
+	width: 65%;
+	height: 700px;
+	float: left;
+	border: 1px solid yellow;
+}
+.lefts img{
+	width: 100px;
+	height: 100px;
+	padding: 20px 0;
+}
+div.lefts h3:nth-child(2){
+	width: 60%;
+	font-size: 18px;
+	font-family: simHei;
+	color: rgb(102, 102, 102);
+	margin: auto;
+	padding: 10px 0;
+	border-bottom: 2px solid rgb(50, 107, 162);
+}
+div.lefts h3:nth-child(4){
+	width: 50%;
+	font-size: 18px;
+	font-family: simHei;
+	color: rgb(102, 102, 102);
+	margin: auto;
+	padding: 10px 0;
+	border-bottom: 2px solid rgb(50, 107, 162);
+}
+.lefts li{
+	margin: 5px 0;
+}
+.lefts li a{
+	font-size: 16px;
+	font-family: simHei;
+	color: rgb(50, 135, 208);
+}
+.right form{
+	margin: 15px 30px;
+	font-family: SimSun;
+	font-weight: bold;
+	color: rgb(60, 60, 60);
+	font-size: 14px;
+}
+form p.defp{
+	background-image: url(../image/bg2.png);
+	background-position: 0% 50%;
+	background-repeat: no-repeat;
+	padding-left: 25px;
+	margin-bottom: 5px;
+}
+form input.defi{
+	width: 100%;
+	height: 30px;
+	margin-bottom: 40px;
+	line-height: 30px;
+	border: 1px solid rgb(195, 195, 195);
+}
+
+form input.defi:focus,form textarea.des:focus{
+	border: 1px solid rgb(118, 175, 223);
+}
+form div.show{
+	width: 100%;
+	height: 435px;
+	overflow: hidden;
+}
+.show textarea{
+	width: 100%;
+	height: 360px;
+	overflow: scroll;
+	overflow-x:hidden;
+	resize:none;
+}
+form div.btn{
+	width: 100%;
+	height: 40px;
+	margin-top: 10px;
+	text-align: center;
+}
+form div.btn input{
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	margin: 0 20px;
+	border: 1px solid rgb(126, 210, 250);
+	border-radius: 5px;
+	background-color: rgb(126, 210, 250);
+	font-family: simHei;
+	font-size: 18px;
+	color: rgb(48, 44, 36);
+}
+form div.btn input:hover{
+	border: 1px solid rgb(37, 178, 246);
+	background-color: rgb(37, 178, 246);
+}
+form textarea.des{
+	width: 100%;
+	height: 300px;
+	font-size: 18px;
+	line-height: 25px;
+	border: 1px solid rgb(195, 195, 195);
+	resize:none;
+}
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的图片</title>
+	<link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/showpic.css">
+
+</head>
+<body>
+	<div class="pic_container">
+		<div class="pic_nav">
+			<h2>我的图库</h2>
+			<a href="index.php"><button>返回首页</button></a>
+			<button>幻灯片</button>
+		</div>
+		<div class="pic_content">
+			<div class="pic_box">
+				<{foreach from=$pictures item=row}>
+				<img src="picture/<{$row.picturebath}>" alt="图片">
+				<{/foreach}>
+			</div>
+			<div class="page">
+					<ul class="pagination">
+						<{if $pageinfo.current_page!=1}>
+						<li class="disable"><a href="picture.php?page=1&albumid=<{$albumid}>">首页</a></li>
+						<{/if}>
+						<{if $pageinfo.prev_page}>
+						<li class="disable"><a href="picture.php?page=<{$pageinfo.prev_page}>&albumid=<{$albumid}>">上一页</a></li>
+						<{/if}>
+						<{if $pageinfo.next_page}>
+						<li class="disable"><a href="picture.php?page=<{$pageinfo.next_page}>&albumid=<{$albumid}>">下一页</a></li>
+						<{/if}>
+						<{if $pageinfo.page_end>$pageinfo.page_end.row_total}>
+						<li class="disable"><a href="picture.php?page=<{$pageinfo.page_num}>&albumid=<{$albumid}>">尾页</a></li>
+						<{/if}>
+					</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

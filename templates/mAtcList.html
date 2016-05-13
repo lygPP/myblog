@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的博文管理目录</title>
+	<link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/allFore.css">
+
+</head>
+<body>
+	<div class="container">
+		<div class="info">
+			<nav>
+				<ul>
+					<li><a href="index.php">主页</a></li>
+					<li><a href="article.php">博文</a></li>
+					<li><a href="albummanager.php">图册</a></li>
+					<li><a href="video.php">视频</a></li>
+					<li><a href="loginout.php">注销</a></li>
+				</ul>
+			</nav>
+			<div class="bg-color">
+				<div class="info-list">
+					<div>
+					<img class="toux" src="userpic/<{$smarty.session.pic}>" alt="我的头像">
+					<section>
+						<p>My name is <span> <{$smarty.session.username}> </span></p>
+						<p>My Job : <span> <{$smarty.session.job}> </span></p>
+						<p><span>Description : </span><{$smarty.session.detail}></p>
+					</section>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="right-sight">
+			<!-- 博文目录模块 -->
+			<div class="atcList">
+				<div class="atc_nav">
+				<h2>博文分享目录</h2>
+					<a href="sharearticle.php"><button>添加博文</button></a>
+				</div>
+				<div class="atc_main">
+					<{foreach from=$articles item=row}>
+					<p class="atcTiltle">
+						<a href="toshowarticle.php?articleid=<{$row.articleid}>"><{$row.articletitle}></a>
+						<span class="delMdf"><a href="deletearticle.php?articleid=<{$row.articleid}>">删除</a>/<a href="tomodifyarticle.php?articleid=<{$row.articleid}>&articletext=<{$row.articletext}>&articletitle=<{$row.articletitle}>&articlesummary=<{$row.articlesummary}>">修改</a></span>
+					</p>
+					<{/foreach}>
+					
+				</div>
+				<div class="page">
+					<ul class="pagination">
+						<{if $pageinfo.current_page!=1}>
+						<li class="disable"><a href="article.php?page=1">首页</a></li>
+						<{/if}>
+						<{if $pageinfo.prev_page}>
+						<li class="disable"><a href="article.php?page=<{$pageinfo.prev_page}>">上一页</a></li>
+						<{/if}>
+						<{if $pageinfo.next_page}>
+						<li class="disable"><a href="article.php?page=<{$pageinfo.next_page}>">下一页</a></li>
+						<{/if}>
+						<{if $pageinfo.page_end>$pageinfo.page_end.row_total}>
+						<li class="disable"><a href="article.php?page=<{$pageinfo.page_num}>">尾页</a></li>
+						<{/if}>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- 博文模块结束 -->
+
+	<script type="text/javascript" src="../js/index.js"></script>
+</body>
+</html>

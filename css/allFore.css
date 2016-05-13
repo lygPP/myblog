@@ -1,0 +1,458 @@
+.in_container{
+	position: relative;
+	top: 150px;
+	width: 100%;
+	height: 450px;
+	font-size: 16px;
+	font-family: simHei;
+}
+.reg_box{
+	width: 800px;
+	height: 450px;
+	border: 2px solid rgb(177, 207, 253);
+	margin: auto;
+}
+.reg_box form{
+	position: relative;
+}
+.first{
+	position: absolute;
+	right: 10px;
+	height: 140px;
+	width: 110px;
+}
+#toux{
+	width: 105px;
+	height: 105px;
+	background-image: url(../image/default.jpg);
+	background-size: 99px 99px;
+}
+#toux img{
+	width: 100px;
+	height: 100px;
+	border: 2px solid rgb(177, 207, 253);
+}
+.first input{
+	width: 70px;
+	height: 25px;
+	margin: 10px 0 0 15px;
+}
+.sec{
+	position: absolute;
+	left: 20px;
+	width: 600px;
+	height: 340px;
+	padding-top: 10px;
+	padding-left: 10px;
+	background-color: rgb(236, 236, 236);
+}
+.sec textarea{
+	width: 300px;
+	height: 100px;
+	resize:none;
+	overflow:scroll;
+	overflow-x:hidden;
+}
+.third{
+	position: absolute;
+	top: 170px;
+	right: 10px;
+	width: 110px;
+	height: 80px;
+
+}
+.third input{
+	width: 80px;
+	height: 25px;
+	font-size: 16px;
+	line-height: 24px;
+	margin: 10px 0 0 10px;
+	border: 1px solid rgb(47, 17, 32);
+	background-color: rgba(113, 1, 39,0.8);
+	color: #fff;
+}
+span.msg{
+	visibility: hidden;
+	margin-left: 10px;
+}
+span.msg i{
+	font-size: 12px;
+	font-family: simSun;
+	font-style: normal;
+	color: rgb(105, 105, 105);
+	padding: 2px 0 2px 17px;
+}
+.ati{
+	background-image: url(../image/warning.png);
+	background-size: 16px 16px;
+	background-position: 0% 0%;
+	background-repeat: no-repeat;
+}
+.error{
+	background-image: url(../image/error.png);
+	background-size: 14px 14px;
+	background-position: 0% 40%;
+	background-repeat: no-repeat;
+}
+.success{
+	background-image: url(../image/ok.png);
+	background-size: 16px 16px;
+	background-position: 0% 0%;
+	background-repeat: no-repeat;
+}
+.login_box{
+	width: 400px;
+	height: 300px;
+	border: 2px solid rgb(177, 207, 253);
+	margin: auto;
+}
+.login_box h2, .reg_box h2{
+	text-align: center;
+	font-family: simHei;
+}
+.login_box form{
+	text-align: center;
+}
+.login_box form p{
+	margin-top: 10px;
+}
+.reg_box form p{
+	margin:0;
+}
+.reg_box form p.tips{
+	height: 20px;
+	margin: 1px 100px;
+}
+p.tips b,p.tips em{
+	font-size: 12px;
+	font-family: simSun;
+	line-height: 20px;
+	vertical-align: top;
+	font-weight: normal;
+	font-style: normal;
+
+}
+p.tips b{
+	visibility: hidden;
+	color: rgb(105, 105, 105);
+
+}
+p.tips em{
+	display: inline-block;
+	width: 55px;
+	height: 20px;
+	text-align: center;
+	background-color: rgb(255, 255, 0);
+}
+p.tips em.active{
+	background-color: rgb(255, 123, 0);
+}
+.login_box form p label, .reg_box form p label{
+	display: inline-block;
+	width: 90px;
+	height: 25px;
+	margin-right: 5px;
+	line-height: 25px;
+	font-weight: bold;
+	background-color: rgba(254, 235, 132,0.8);
+	text-align:right;
+	color: rgb(54, 25, 41);
+	border: 1px solid rgb(254, 187, 81);
+}
+.login_box form p input, .reg_box form p input{
+	display: inline-block;
+	width: 180px;
+	height: 24px;
+	vertical-align: top;
+	line-height: 24px;
+	border: 1px solid rgb(177, 207, 253);
+}
+.login_box form p input:focus{
+		border: 1px solid rgb(177, 207, 253);
+}
+.reg_box form p input:focus{
+		border: 1px solid rgb(177, 207, 253);
+}
+.login_box form p.up input{
+	width: 80px;
+	height: 25px;
+	font-size: 16px;
+	line-height: 24px;
+	margin: 30px 30px 0 0;
+	border: 1px solid rgb(47, 17, 32);
+	background-color: rgba(113, 1, 39,0.8);
+	color: #fff;
+}
+
+.atcList{
+	width: 100%;
+}
+.atc_main{
+	width: 90%;
+	margin: 0 25px;
+	font-size: 18px;
+	font-family: SimHei;
+}
+.atc_main p{
+	position: relative;
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+}
+p.atcTiltle a{
+	color: rgb(15, 16, 13);
+	cursor:pointer;
+}
+.atc_main p:hover{
+	background-color: rgb(242, 206, 214);
+}
+.atc_main p.atcTiltle a:active{
+	color: rgb(15, 16, 13);
+}
+.atc_main p.atcTiltle a:visited{
+	color: rgb(15, 16, 13);
+}
+.atc_main p span{
+	position: absolute;
+	right: 5px;
+}
+.atc_main p span a{
+	color: rgb(3, 108, 89);
+	font-size: 14px;
+	border: 1px solid rgb(255, 121, 121);
+	margin: 0 2px;
+	padding: 4px 5px;
+	border-radius: 5px;
+	cursor:pointer;
+}
+.atc_main p span a:hover{
+	color: rgb(32, 17, 47);
+	background-color: rgb(255, 121, 121);
+}
+.atc_main p span a:active{
+	color: rgb(32, 17, 47);
+}
+.atc_main p span a:visited{
+	color: rgb(32, 17, 47);
+}
+.atc_nav{
+	position: relative;
+	width: 90%;
+	height: 48px;
+	background-color: red;
+}
+.atc_title{
+	position: relative;
+	width: 90%;
+	height: 100px;
+	margin:0 auto;
+	text-align: left;
+	
+}
+.atc_title h2{
+	width: 90%;
+	height: 48px;
+	font-size: 30px;
+	padding: 0 15px;
+}
+.atc_title p{
+	font-size: 14px;
+	margin: 0 auto;
+	padding: 8px 15px;
+	border-bottom: 2px solid rgb(92, 194, 111);
+}
+.atc_title p span{
+	margin-right: 20px;
+}
+.atc_title p button{
+	width: 100px;
+	height: 30px;
+	font-size: 14px;
+	font-family: SimHei;
+	line-height: 30px;
+	margin-left: 10px;
+	color: rgb(74, 74, 74);
+	border: 1px solid rgb(255, 121, 121);
+	border-radius: 6px;
+	background-color: rgb(255, 121, 121);
+}
+.showAtc{
+	width: 85%;
+	min-height: 600px;
+	margin:15px auto;
+	padding: 15px;
+	padding-top: 30px;
+	cursor: default;
+}
+.atc_nav button{
+	width: 94px;
+	height: 30px;
+	float: right;
+	margin: 9px 5px 0 9px;
+	font-size: 14px;
+	font-family: SimHei;
+	line-height: 30px;
+	color: rgb(74, 74, 74);
+	border: 1px solid rgb(255, 121, 121);
+	border-radius: 6px;
+	background-color: rgb(255, 121, 121);
+}
+.atc_nav button:hover{
+	font-size: 16px;
+}
+.add_bg{
+	position: absolute;
+	top: 0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	background-color: rgba(38, 33, 26,0.7);
+	z-index: 99;
+}
+.add_album{
+	position: absolute;
+	top: 200px;
+	left: 200px;
+	width: 300px;
+	height: 150px;
+	display: none;
+	border: 1px solid rgb(255, 121, 121);
+	border-radius: 6px; 
+	background-color:yellow;
+	z-index: 100;
+}
+.add_album p:first-child{
+	width: 90%;
+	height: 25px;
+	margin: 30px auto;
+}
+.add_album p:last-child{
+	width: 90%;
+	height: 25px;
+	margin: 10px auto;
+	text-align: center;
+}
+.add_album p:last-child input{
+	width: 60px;
+	height: 25px;
+	margin: 0 15px;
+	vertical-align: top;
+}
+.album{
+	width: 300px;
+	height: 200px;
+	border: 1px solid rgb(188, 185, 181);
+	border-radius: 5px;
+	font-family: SimHei;
+	color: rgb(60, 64, 63);
+	text-align: center;
+	margin-bottom: 20px;
+	cursor: pointer;
+	background: rgb(229, 229, 229);
+}
+div.album img{
+	margin-top: 5px;
+	max-width: 290px;
+	max-height: 185px;
+	box-shadow: 6px 6px 8px rgba(20, 20, 20,0.5);
+}
+.albumform{
+	background-color: red;
+	width: 100%;
+	min-height: 600px;
+}
+
+.album_pic p{
+	font-size: 18px;
+	cursor: pointer;
+}
+.album_pic p:hover{
+	color: red;
+}
+nav ul{
+	position: absolute;
+	right: 20px;
+}
+nav ul li{
+	display: inline;
+	border: 1px solid rgb(185, 185, 185);
+	margin: 0 10px;
+	padding: 5px 8px;
+	line-height: 50px;
+	text-align: center;
+	border-radius: 6px;
+	cursor: pointer;
+}
+.right-sight form{
+	width: 100%;
+	height: 200px;
+}
+.upload_Main{
+
+	width: 100%;
+	height: 200px;
+
+}
+.upload_choose{
+	position: relative;
+	width: 95%;
+	height: 190px;
+	margin: 0 auto;
+	border:1px solid yellow;
+}
+.upload_choose input{
+	position: absolute;
+	top: 80px;
+	left:1px;
+	width: 30%;
+	margin-left: 10px;
+}
+.upload_drag_area{
+	position: absolute;
+	top: 20px;
+	right:1px;
+	width: 60%;
+	height: 150px;
+	margin-right: 10px;
+	text-align: center;
+	line-height: 150px;
+	border: 1px solid blue;
+}
+.upload_preview{
+	width: 95%;
+	height: 300px;
+	border: 1px solid blue;
+	margin: auto;
+	overflow: scroll;
+	display: none;
+}
+.upload_preview img{
+	max-width: 133px;
+	max-height: 133px;
+	height: 300px;
+	border: 1px solid blue;
+	margin: 10px 0 0 5px;
+	overflow: hidden;
+}
+.defbtn{
+	width: 95%;
+	height: 30px;
+	margin: 15px auto;
+	/*display: none;*/
+}
+.defbtn input{
+	width: 100px;
+	height: 30px;
+	font-size: 16px;
+	border: 1px solid rgb(168, 168, 168);
+	background-color: rgb(234, 234, 234);
+
+}
+.upload_info{
+	width: 95%;
+	height: 100px;
+	/*border: 1px solid rgb(168, 168, 168);*/
+	margin: 10px auto;
+	display: none;
+}

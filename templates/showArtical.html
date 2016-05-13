@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的博客</title>
+	<link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/allFore.css">
+	
+</head>
+<body>
+	<div class="container">
+		<div class="info">
+			<nav>
+				<ul>
+					<li><a href="index.php">主页</a></li>
+					<li><a href="article.php">博文</a></li>
+					<li><a href="albummanager.php">图册</a></li>
+					<li><a href="video.php">视频</a></li>
+					<li><a href="loginout.php">离开</a></li>
+				</ul>
+			</nav>
+			<div class="bg-color">
+				<div class="info-list">
+					<div>
+					<img class="toux" src="userpic/<{$smarty.session.pic}>" alt="我的头像">
+					<section>
+						<p>My name is <span> <{$smarty.session.username}> </span></p>
+						<p>My Job : <span> <{$smarty.session.job}> </span></p>
+						<p><span>Description : </span><{$smarty.session.detail}></p>
+					</section>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="right-sight">
+			<!-- 博文模块 -->
+			<div class="essay">
+				<div class="atc_title">
+					<h2><{$row.articletitle}></h2>
+					<p><b>概要：<{$row.articlesummary}></b></p>
+					<p>
+						<span>发表于 <{$row.articledate}></span>
+						<span>阅读（<{$row.readnum}>）</span>
+						<span><a href="toshowarticle.php?articleid=<{$row.articleid}>&supportnum=<{$row.supportnum}>">顶（<{$row.supportnum}>）</a></span>
+						<a href="article.php"><button>返回博文目录</button></a>
+					</p>
+				</div>
+				<div class="showAtc">
+					<{$row.articletext}>
+				</div>
+				<div class="page">
+					<ul class="pagination">
+						<li><a href="toshowarticle.php?articleid=<{$prev}>">上一篇</a></li>
+						<li><a href="toshowarticle.php?articleid=<{$next}>">下一篇</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

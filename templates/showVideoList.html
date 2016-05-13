@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的视频目录</title>
+	<link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/allFore.css">
+
+</head>
+<body>
+	<div class="container">
+		<div class="info">
+			<nav>
+				<ul>
+					<li><a href="index.php">主页</a></li>
+					<li><a href="article.php">博文</a></li>
+					<li><a href="albummanager.php">图册</a></li>
+					<li><a href="video.php">视频</a></li>
+					<li><a href="loginout.php">离开</a></li>
+				</ul>
+			</nav>
+			<div class="bg-color">
+				<div class="info-list">
+					<div>
+					<img class="toux" src="userpic/<{$smarty.session.pic}>" alt="我的头像">
+					<section>
+						<p>My name is <span> <{$smarty.session.username}> </span></p>
+						<p>My Job : <span> <{$smarty.session.job}> </span></p>
+						<p><span>Description : </span><{$smarty.session.detail}></p>
+					</section>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="right-sight">
+			<!-- 博文目录模块 -->
+			<div class="atcList">
+				<div class="atc_nav">
+				<h2>视频分享目录</h2>
+<!-- 					<button>添加视频</button> -->
+				</div>
+				<div class="atc_main">
+					<{foreach from=$videos item=row}>
+					<p class="atcTiltle">
+						<a href="<{$row.videolink}>"><{$row.videolink}></a>
+					</p>
+					<{/foreach}>
+					
+				</div>
+				<div class="page">
+					<ul class="pagination">
+						<{if $pageinfo.current_page!=1}>
+						<li class="disable"><a href="video.php?page=1">首页</a></li>
+						<{/if}>
+						<{if $pageinfo.prev_page}>
+						<li class="disable"><a href="video.php?page=<{$pageinfo.prev_page}>">上一页</a></li>
+						<{/if}>
+						<{if $pageinfo.next_page}>
+						<li class="disable"><a href="video.php?page=<{$pageinfo.next_page}>">下一页</a></li>
+						<{/if}>
+						<{if $pageinfo.page_end>$pageinfo.page_end.row_total}>
+						<li class="disable"><a href="video.php?page=<{$pageinfo.page_num}>">尾页</a></li>
+						<{/if}>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- 博文模块结束 -->
+
+</body>
+</html>
